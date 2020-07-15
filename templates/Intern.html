@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNSHIP</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+
+</head>
+<body>
+    <h1>KYC</h1>
+    <hr>
+    <form enctype="multipart/form-data" method="POST" action="/new/">
+        {% csrf_token %}
+        <div class="container-fluid">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 " class="form-group">
+                    <label for="exampleInputEmail1">First Name</label>
+                    <input type="text" class="form-control" id="First_name" name="First_name" aria-describedby="emailHelp" placeholder="Enter First Name">
+                </div>
+    
+                <div class="col-4 ">
+                    <label for="exampleInputEmail1">Middle Name</label>
+                    <input type="text" class="form-control" id="Middle_name" name="Middle_name" aria-describedby="emailHelp" placeholder="Enter Middle Name">
+                </div>
+    
+                <div class="col-4 ">
+                    <label for="exampleInputEmail1">Last Name</label>
+                    <input type="text" class="form-control" id="Last_name" name="Last_name" aria-describedby="emailHelp" placeholder="Enter Last Name">
+                </div>
+              </div>
+            </div>
+        </div>  
+        
+        <br>
+    
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Company Name</label>
+                    <input type="text" class="form-control" id="Company_name" name="Company_name" aria-describedby="emailHelp" placeholder="Enter Company Name">
+                  </div>
+            </div>
+        </div>
+        
+        <hr>
+    
+        <div class="container-fluid">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 " class="form-group">
+                    <label for="exampleInputEmail1">Registered Mobile Number</label>
+                    <input type="phone" class="form-control" id="Mobile_Number" name="Mobile_Number" aria-describedby="emailHelp" placeholder="Enter Mobile Number">
+                </div>
+              </div>
+            </div>
+        </div>
+    
+        <hr>
+    
+        <div class="container-fluid">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 " class="form-group">
+                    <label for="exampleInputEmail1">Registered Email Id</label>
+                    <input type="email" class="form-control" id="Email" name="Email" aria-describedby="emailHelp" placeholder="Enter Email Id">
+                </div>
+    
+                <div class="col-4 ">
+                    <label for="exampleInputEmail1">Date of birth(As per PAN Card)</label>
+                    <input type="text" class="form-control" id="Date_of_Birth" name="Date_of_Birth" aria-describedby="emailHelp" placeholder="Enter Date of birth">
+                </div>
+    
+                <div class="col-4 ">
+                    <label for="exampleInputEmail1">PAN Card Number</label>
+                    <input type="text" class="form-control" id="Pan" name="Pan" aria-describedby="emailHelp" placeholder="Enter Last Name">
+                </div>
+              </div>
+            </div>
+        </div>
+    
+        <hr>
+    
+        <div class="container-fluid">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 " class="form-group">
+                    <label for="exampleInputEmail1">Pin Code</label>
+                    <input type="Number" class="form-control" id="Pin_Code" name="Pin_Code" aria-describedby="emailHelp" placeholder="Enter Pin Code">
+                </div>
+    
+                <div class="col-4 ">
+                    <label for="exampleInputEmail1">District</label>
+                    <input type="text" class="form-control" id="District" name="District" aria-describedby="emailHelp" placeholder="Enter District"> 
+                </div>
+    
+                <div class="col-4 ">
+                    <label for="exampleInputEmail1">State</label>
+                    <input type="text" class="form-control" id="State" name="State" aria-describedby="emailHelp" placeholder="Enter State">
+                </div>
+                
+              </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 " class="form-group">
+                    <label for="exampleInputEmail1">City</label>
+                    <input type="text" class="form-control" id="City" name="City" aria-describedby="emailHelp" placeholder="Enter City">
+                </div>
+    
+                <div class="col-8 ">
+                    <label for="exampleInputEmail1">Address(As per Adhaar Back Side)</label>
+                    <input type="text" class="form-control" id="Address" name="Address" aria-describedby="emailHelp" placeholder="Enter Address"> 
+                </div>
+              </div>
+            </div>
+        </div>
+    
+        <br>
+    
+        <div class="container-fluid">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 bg-primary text-white" class="form-group">
+                    <label for="exampleInputEmail1">Note- Clear Self Attested Front Scanned Image Is required</label>
+                </div>
+              </div>
+            </div>
+        </div>
+    
+        <br>
+    
+        <div class="container-fluid">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-6 " class="form-group">
+                    <label for=""><b>Adhaar Card</b></label>
+                    <input type="file" name="image" id="image"><br>
+                    <img src="{{MEDIA_URL}}{{imagefile}}" alt="">
+                    <br>
+                </div>
+    
+                <div class="col-6 ">
+                    <label for=""><b>Pan Card</b></label>
+                    <input type="file" name="image" id="image"><br>
+                    <img src="{{MEDIA_URL}}{{imagefile}}" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+    
+        <br>
+    
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <h4>Steps to upload:</h4>
+                <ul>
+                    <li>Download E-Adhaar from <a href="https://eaadhaar.uidai.gov.in/"></a></li>
+                    <li>Take a print and seft attest the document</li>
+                    <li>Scan and upload the seft attest copy of E-Adhaar here</li>
+                </ul>
+        
+                <h4>Steps to upload:</h4>
+                <ul>
+                    <li>Only JPG/JPEG/PDF Format are allowed</li>
+                    <li>The Document must be latest and clear</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <input type="submit" value="Update KYC">
+            </div>
+        </div>
+    </form>
+    
+
+</body>
+</html>
